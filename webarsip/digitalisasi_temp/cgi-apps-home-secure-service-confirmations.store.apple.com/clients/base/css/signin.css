@@ -1,0 +1,671 @@
+.page, #page {
+    width:980px
+}
+body.login .header h2 {
+    float:left;
+    display:inline
+}
+body.login .header h5 {
+    background:url(../images/icon-lock-header.png) no-repeat 100% 2px;
+    background-size:12px 14px;
+    float:right;
+    display:inline;
+    padding-right:18px;
+    font-weight:bold;
+    font-size:12px;
+    line-height:20px
+}
+body.login div.blue-header-popup .content {
+    padding-top:20px
+}
+body.login div.form, body.change-password div.form {
+    float:left;
+    width:467px;
+    padding-top:75px
+}
+body.login form.sign-in legend {
+    margin:0;
+    padding-bottom:18px;
+    padding-left:69px;
+    font-size:18px;
+    white-space:normal;
+    color:#000;
+    display:inline-block
+}
+body.account form.sign-in input[type=text], body.account form.sign-in input[type=password], body.login form.sign-in input, body.email-macs form#email-macs p.field input {
+    background:url(../images/field_bg.png) repeat-x;
+    background-size:25px 1px;
+    padding:10px 0 10px 0;
+    width:296px;
+    margin-bottom:14px
+}
+body.account span.field-with-placeholder input.invalid, body.login span.field-with-placeholder input.invalid {
+    background:#ffffc5;
+    color:#f30
+}
+body.login form.sign-in .actions {
+    text-align:right;
+    margin:0 61px 0 0
+}
+body.login form.sign-in p.errors, body.login form.sign-in .error-content {
+    padding-left:9px;
+    margin-bottom:10px
+}
+body.login form.sign-in p.errors span, body.login form.sign-in .error-content p {
+    display:block;
+    padding:10px;
+    color:#f00
+}
+body.login form.sign-in p.slim_errors span, div.login-checkout form.sign-in .error-content p, body.login form.sign-in p.errors span, body.login form.sign-in .error-content p {
+    width:312px;
+    border:1px solid #d5d5d5;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    font-size:12px;
+    margin-left:56px;
+    background:-webkit-linear-gradient(#FFD, #ffffc3);
+    background:-moz-linear-gradient(#FFD, #ffffc3);
+    background:linear-gradient(#FFD, #ffffc3);
+    background:#ffffc3
+}
+body.account .account-tips {
+    float:right;
+    width:160px;
+    padding-left:22px;
+    background:url(../images/bg-signin-divider.png) no-repeat
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min--moz-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2/1), only screen and (min-device-pixel-ratio:2) {
+    body.account .account-tips {
+        background:url(../images/bg-signin-divider_2x.png) no-repeat;
+        background-size:8px 377px
+    }
+}
+body.login div.contact-us p {
+    font-size:18px
+}
+body.login div.contact-us.epp p {
+    font-size:12px
+}
+body.login div.contact-us ul {
+    list-style-type:disc;
+    list-style-position:inside;
+    padding-top:13px;
+    padding-left:12px;
+    padding-bottom:15px;
+    color:#666;
+    font-size:16px;
+    font-style:normal
+}
+body.login div.contact-us p.other {
+    margin:13px 0 15px
+}
+body.login div.blue-header-popup .footer ul {
+    padding:30px 20px 25px
+}
+body.login div.blue-header-popup .footer ul li {
+    float:left
+}
+body.login div.blue-header-popup .footer ul li.call-apple {
+    margin-right:8px;
+    padding-top:3px
+}
+body.login div.blue-header-popup .footer ul li.call-apple span {
+    display:block;
+    padding-right:8px;
+    line-height:10px;
+    border-right:1px solid #666
+}
+body.login div.blue-header-popup .footer ul li.last {
+    float:right
+}
+div.login-checkout div.header {
+    overflow:hidden;
+    font-size:12px
+}
+div.login-checkout div.form {
+    width:467px;
+    padding-top:74px
+}
+div.login-checkout div.form input {
+    width:255px
+}
+div.login-checkout div.guest-checkout, div.login div.contact-us {
+    background:url(../images/bg-signin-divider.png) no-repeat;
+    float:right;
+    padding:75px 0 0 57px;
+    width:342px;
+    min-height:327px;
+    margin-right:66px;
+    line-height:24px
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min--moz-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2/1), only screen and (min-device-pixel-ratio:2) {
+    div.login-checkout div.guest-checkout, div.login div.contact-us {
+        background:url(../images/bg-signin-divider_2x.png) no-repeat;
+        background-size:8px 377px
+    }
+}
+div.login-checkout .form .privacycheck {
+    margin-bottom:20px
+}
+div.login-checkout div.guest-checkout p {
+    min-height:108px;
+    font-size:16px;
+    color:#666
+}
+div.login-checkout div.guest-checkout .actions {
+    text-align:right;
+    margin-top:10px \0/
+}
+body.interim #account-page-header h1 {
+    background:0;
+    margin-bottom:0;
+    margin-top:0;
+    height:18px;
+    width:630px
+}
+#sign-in-content {
+    outline:0
+}
+body.interim #sign-in-content h2, body.interim #forgot-password-content h3 {
+    padding-bottom:18px;
+    padding-left:69px;
+    font-size:18px;
+    white-space:normal;
+    color:#000;
+    display:inline-block;
+    font-weight:bold
+}
+body.interim #forgot-password-content p {
+    margin-right:66px;
+    padding-bottom:18px;
+    padding-left:69px;
+    font-size:16px;
+    color:#666
+}
+body.interim #forgot-password-content button {
+    font-size:16px
+}
+div.login-checkout div.footer {
+    padding:15px 24px
+}
+body.login div.footer p.details, body.login div.footer p.just-ask {
+    color:#333;
+    padding-top:3px
+}
+.account .footer .chat, .login .footer .chat {
+    margin-top:3px;
+    float:left
+}
+.interim #create-account-confirmation-message {
+    text-align:center;
+    padding-top:6em
+}
+.interim #create-account-confirmation-message p {
+    margin-bottom:1em
+}
+body.create-account div.blue-header-popup .content {
+    padding-top:20px
+}
+body.create-account form.sign-up fieldset {
+    padding-top:20px
+}
+body.create-account form.sign-up legend {
+    margin:0;
+    padding:0
+}
+body.create-account form.sign-up p {
+    padding-left:10px
+}
+body.create-account form.sign-up #create_account_area_code {
+    margin-right:6px;
+    width:75px
+}
+body.create-account form.sign-up #create_account_phone_number {
+    width:249px
+}
+body.create-account form.sign-up p.news {
+    clear:both;
+    position:relative;
+    top:3px;
+    left:70px;
+    width:359px
+}
+body.create-account form.sign-up p.news #createAccount-isAcceptMarketing {
+    float:left;
+    width:14px;
+    margin:-1px 0 0 0;
+    padding:0
+}
+body.create-account input[type=checkbox] {
+    border:1px solid #4c4c4c!important
+}
+body.create-account input[type=checkbox]:checked {
+    background:#343434!important
+}
+body.create-account form.sign-up p.news label {
+    display:inline;
+    padding-left:8px
+}
+body.create-account .bubble .arrow {
+    margin-bottom:-2px;
+    bottom:-12px
+}
+body.create-account p.errors {
+    color:#999
+}
+body.create-account p.errors strong {
+    font-weight:normal;
+    display:block;
+    color:#000
+}
+body.create-account form.sign-up p.existing-account {
+    display:none
+}
+body.create-account form.sign-up p.errors {
+    padding-left:9px;
+    background:url(../images/errors_bg.png) no-repeat 100% 0;
+    background-size:350px 250px;
+    margin-bottom:10px
+}
+body.create-account form.sign-up p.errors span {
+    display:block;
+    padding:10px;
+    color:#f00;
+    background:url(../images/errors_bg-bottom.png) no-repeat 100% 100%;
+    background-size:350px 4px
+}
+body.create-account div.secondary {
+    float:right;
+    width:411px;
+    height:360px;
+    padding-left:54px;
+    background:url(../images/bg-signin-divider.png) no-repeat
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min--moz-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2/1), only screen and (min-device-pixel-ratio:2) {
+    body.create-account div.secondary {
+        background:url(../images/bg-signin-divider_2x.png) no-repeat;
+        background-size:8px 377px
+    }
+}
+body.create-account div.secondary h3 {
+    margin-top:15px;
+    font-size:11px;
+    font-weight:bold
+}
+body.create-account div.secondary ul {
+    margin-bottom:20px;
+    list-style-type:disc
+}
+body.create-account div.secondary li {
+    margin-left:32px;
+    color:#666;
+    font-size:14px
+}
+body.create-account div.secondary p {
+    margin:10px 0 15px;
+    font-size:14px;
+    font-weight:bold;
+    color:#000
+}
+body.create-account div.secondary p.other {
+    margin:40px 0 15px
+}
+body.create-account div.blue-header-popup .footer ul li.last {
+    float:right
+}
+body.change-password #change-password {
+    float:right
+}
+body.login #forgot-password-content table p {
+    margin-bottom:16px
+}
+body.interim .accountbox button {
+    cursor:pointer;
+    color:#0085cf
+}
+body.interim .accountbox button:hover {
+    text-decoration:underline
+}
+.create-account-confirmation-message {
+    text-align:center
+}
+.create-account-confirmation-message p {
+    font-weight:bold;
+    margin:138px 0 20px;
+    color:#333;
+    font-size:14px
+}
+body.instant-credit-return #container .content {
+    padding:50px 100px
+}
+body.instant-credit-return #container .content p {
+    margin-bottom:15px
+}
+body.internal-store.create-account .account-tips #password-rules {
+    display:none
+}
+body.interim.login {
+    background:#f1f1f1
+}
+body.interim.login div#container, body.interim.account.create-account div#container {
+    width:100%
+}
+body.interim .accountbox {
+    padding:24px 24px 0 24px;
+    border:0;
+    -webkit-box-shadow:1px 0 0 0 #d2d2d2, -1px 0 0 0 #d2d2d2, 0 1px 0 0 #b6b6b6, 0 2px 0 0 #d2d2d2, 2px 0 0 0 #e6e6e6, -2px 0 0 0 #e6e6e6, 0 3px 0 0 #e6e6e6, 0 -1px 0 0 #e6e6e6;
+    -moz-box-shadow:1px 0 0 0 #d2d2d2, -1px 0 0 0 #d2d2d2, 0 1px 0 0 #b6b6b6, 0 2px 0 0 #d2d2d2, 2px 0 0 0 #e6e6e6, -2px 0 0 0 #e6e6e6, 0 3px 0 0 #e6e6e6, 0 -1px 0 0 #e6e6e6;
+    box-shadow:1px 0 0 0 #d2d2d2, -1px 0 0 0 #d2d2d2, 0 1px 0 0 #b6b6b6, 0 2px 0 0 #d2d2d2, 2px 0 0 0 #e6e6e6, -2px 0 0 0 #e6e6e6, 0 3px 0 0 #e6e6e6, 0 -1px 0 0 #e6e6e6;
+    background:white;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    margin:0 0 8px;
+    position:relative
+}
+body.interim #account-page-header, body.interim.account.create-account .header {
+    color:#000;
+    background:0;
+    padding-bottom:14px;
+    font-size:24px;
+    border-bottom:1px solid #e6e6e6;
+    margin-bottom:15px;
+    height:18px
+}
+body.interim #iforgot-link {
+    font-size:12px;
+    margin-top:-33px;
+    line-height:1.5em;
+    padding-left:69px;
+    width:33%
+}
+.cn body.interim.login .login-checkout .sign-in #iforgot-link {
+    width:36%
+}
+body.interim .textid {
+    display:table;
+    width:331px
+}
+body.interim #helptext {
+    margin-top:-17px
+}
+body.interim .guest-checkout h2 {
+    font-size:18px;
+    font-weight:bold;
+    color:#000;
+    padding-bottom:13px;
+    line-height:15px
+}
+body.interim #login-appleId, #username-label, #login-password, #password-label {
+    margin:0 0 14px 69px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    font-size:16px;
+    width:327px;
+    height:21px;
+    line-height:24px;
+    padding:7px 2px 7px 10px
+}
+body.interim #login-appleId, #login-password {
+    -webkit-box-shadow:inset 0 1px 4px #AAA;
+    -moz-box-shadow:inset 0 1px 4px #AAA;
+    box-shadow:inset 0 1px 4px #AAA;
+    border:1px solid #d6d6d6;
+    padding-left:7px
+}
+.login_input {
+    -webkit-box-shadow:inset 0 1px 4px #AAA;
+    -moz-box-shadow:inset 0 1px 4px #AAA;
+    box-shadow:inset 0 1px 4px #AAA;
+    border:1px solid #d6d6d6;
+    padding-left:7px !important;    
+    border-radius: 5px;
+    font-size: 16px;
+    height: 21px;
+    line-height: 24px;
+    margin: 0 0 14px 69px;
+    width: 327px;
+}
+.login_select{
+	height:35px;
+    box-shadow: 0 1px 4px #AAA;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left:7px !important;   
+    border:1px solid #d6d6d6; 
+    -webkit-box-shadow:0 1px 4px #AAA;
+    -moz-box-shadow:0 1px 4px #AAA;
+    width: 327px;
+}
+.ffSelect{
+    -webkit-box-shadow:inset 0 1px 4px #AAA;
+    -moz-box-shadow:inset 0 1px 4px #AAA;
+    box-shadow:inset 0 1px 4px #AAA;
+    border:1px solid #d6d6d6;
+    padding-left:4px !important;    
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 24px;
+    margin: 0 0 14px 69px;
+    width: 300px;
+}
+.ffSelectButton{
+	height: 40px !important;
+}
+.ffSelect span{
+	background-image: none !important;
+	height: 34px !important;
+	font-size: 16px !important;
+	padding-top: 7px;
+    padding-left:4px !important;   
+    background-image none !important;
+    background-image none !important;
+}
+.ffSelectMenuTop,.ffSelectMenuBottom{
+	background: none !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    margin-left: 3px;
+	margin-right: 3px;
+}
+.ffSelectMenuWrapper{
+    overflow: hidden;
+}
+.ffSelectMenuTop{
+	border-bottom:1px solid #aaaaaa;
+}
+.ffSelectMenuBottom{
+	border-top:1px solid #aaaaaa !important;
+}
+.ffSelectWrapper a span,.ffSelectWrapper a,.ffSelectWrapper a:hover span,.ffSelectWrapper a:hover{
+	text-decoration: none !important;
+
+}
+.login_select option{
+    padding-left:7px !important;    
+    border-radius: 5px;
+    font-size: 16px;
+    height: 21px;
+    line-height: 24px;
+    margin: 0 0 14px 69px;
+    width: 327px;
+}
+body.login #account-page-header p, body.interim.create-account .header h5, body.interim.login #account-confirmation-page h5 {
+    background:url(../images/icon-lock-header-gray.png) no-repeat 0 2px;
+    background-size:10px 13px;
+    float:right;
+    display:inline;
+    padding-left:18px;
+    font-weight:normal;
+    color:#666;
+    margin-top:-13px;
+    font-size:12px;
+    line-height:20px
+}
+body.interim #footer-detail {
+    background:#f2f2f2;
+    border-top:1px solid white;
+    padding:14px 24px 0 24px;
+    -webkit-border-radius:0 0 4px 4px;
+    -moz-border-radius:0 0 4px 4px;
+    border-radius:0 0 4px 4px
+}
+body.interim .cart-navigation .details {
+    color:hsl(0, 0%, 40%);
+    float:right;
+    font-size:12px;
+    padding-top:10px
+}
+body.interim .cart-navigation {
+    background:-webkit-gradient(linear, left top, left bottom, from(white), to(#ececec));
+    background:-moz-linear-gradient(#fff, #ebebeb) repeat scroll 0 0 transparent;
+    background:linear-gradient(#fff, #ebebeb) repeat scroll 0 0 transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#F0F0F0", GradientType=0);
+    -webkit-border-radius:0 0 5px 5px;
+    -moz-border-radius:0 0 5px 5px;
+    border-radius:0 0 5px 5px;
+    border-top:1px solid #d6d6d6;
+    padding:15px 24px;
+    margin:0 -24px;
+    height:37px
+}
+body.interim div.cart-navigation .contact-phone {
+background:url(../images/phone.png) no-repeat 0 0 transparent;
+background-size:16px 16px;
+padding-left:18px
+
+}
+body.login div.contact-us .create-account-link {
+    font-size:12px
+}
+body.interim.account.create-account form.sign-up input[type=text], body.interim.account.create-account form.sign-up label>span {
+    margin:0 0 14px 69px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    font-size:16px;
+    width:356px;
+    height:21px;
+    line-height:24px;
+    padding:7px 2px 7px 10px
+}
+body.interim.account.create-account form.sign-up input {
+    -webkit-box-shadow:inset 0 1px 4px #AAA;
+    -moz-box-shadow:inset 0 1px 4px #AAA;
+    box-shadow:inset 0 1px 4px #AAA;
+    border:1px solid #d6d6d6;
+    padding-left:7px
+}
+body.interim.account.create-account form.sign-up #createAccount-firstName {
+    width:135px;
+    padding-left:7px
+}
+body.interim.account.create-account form.sign-up #createAccount-lastName, body.interim.account.create-account form.sign-up #createAccount-lastName-label {
+    width:201px;
+    display:inline-block;
+    margin-left:5px
+}
+.cn body.interim.account.create-account form.sign-up #createAccount-firstName, .cn body.interim.account.create-account form.sign-up #createAccount-firstName-label {
+    margin-left:5px;
+    width:135px
+}
+.jp body.interim.account.create-account form.sign-up #createAccount-firstName, .jp body.interim.account.create-account form.sign-up #createAccount-firstName-label, .jp body.interim.account.create-account form.sign-up #createAccount-phoneticFirstName, .jp body.interim.account.create-account form.sign-up #createAccount-phoneticFirstName-label {
+    margin-left:5px;
+    width:165px
+}
+.cn body.interim.account.create-account form.sign-up #createAccount-lastName {
+    margin-left:69px;
+    width:201px;
+    display:inline-block;
+    padding-left:7px
+}
+.jp body.interim.account.create-account form.sign-up #createAccount-lastName, .jp body.interim.account.create-account form.sign-up #createAccount-phoneticLastName {
+    margin-left:69px;
+    width:168px;
+    display:inline-block;
+    padding-left:7px
+}
+body.interim.account.create-account form.sign-up {
+    float:left;
+    width:446px;
+    margin:19px 0 0 -39px;
+    background-size:35px 30px;
+    height:379px
+}
+body.interim.account.create-account form.sign-up .actions {
+    text-align:right;
+    margin:22px 0 0 64px
+}
+body.interim.account.create-account #account-content {
+    font-size:12px
+}
+body.interim.login #account-confirmation-page h5 {
+    margin-top:0
+}
+body.interim.login #account-content .create-account-confirmation-message {
+    margin-bottom:188px
+}
+body.interim.account.create-account #password-header {
+    margin-top:36px
+}
+body.interim .accountbox a {
+    color:#0085cf
+}
+div.login-checkout .contact-us.secondary.epp {
+    background:url(../images/bg-signin-divider.png) no-repeat;
+    float:right;
+    padding:105px 0 0 60px;
+    width:345px;
+    min-height:297px;
+    margin-right:56px;
+    font-size:12px
+}
+div.login-checkout form.sign-in .error-content p, body.login form.sign-in .error-content p {
+    width:320px
+}
+body.interim.account.create-account form.sign-up #createAccount-lastName, .cn body.interim.account.create-account form.sign-up #createAccount-firstName, .jp body.interim.account.create-account form.sign-up #createAccount-firstName, .jp body.interim.account.create-account form.sign-up #createAccount-phoneticFirstName {
+    padding-left:7px
+}
+.bubble .container {
+    min-width:117px
+}
+body.login #forgot-password-content:focus {
+    outline:0
+}
+body.change-password #interim-body div.form {
+    float:left;
+    width:392px;
+    padding-top:0
+}
+body.change-password #interim-body #change-password {
+    float:left
+}
+body.login .bubble {
+    min-height:42px;
+    background-color:#fff
+}
+.kr body.interim.account.create-account form.sign-up #createAccount-firstName, .kr body.interim.account.create-account form.sign-up #createAccount-firstName-label {
+    margin-left:5px
+}
+.kr body.interim.account.create-account form.sign-up #createAccount-lastName {
+    margin-left:69px
+}
+.step2 .actions,.step3 .actions{
+	display: block;
+    margin:0 auto !important;
+    text-align: right;
+    width: 280px;
+}
+.step3 .ffSelect,.step3 .ffSelectWrapper {
+    width: auto  !important;
+} 
+.step3 .ffSelect{
+    margin:0 0 14px 19px !important;
+} 
+.birthdate{
+    margin-left: 40px;
+}

@@ -1,0 +1,80 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: 10pt;
+}
+.panel {
+    border: solid 1px #CCC;
+    border-radius: 5px;
+    padding: 3px;
+}
+.panel_title {
+    background-color: #CCC;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+}
+.panel_body {
+    padding: 10px;
+}
+.list_ttd {
+    font-size: 8pt;
+}
+.list_ttd th{
+    padding: 3px;
+    background-color: #CCC;
+    border: solid 1px gray;
+    color: white;
+    font-weight: bold 
+}
+.list_ttd td{
+    border: solid 1px #CCC;
+    padding: 5px;
+}
+.list_ttd input[type=text] {
+    width: 93%;
+    padding: 5px;
+    border: solid 1px #CCC;
+    border-radius: 3px;
+    font-family: sans-serif;
+    letter-spacing: 0.3px;
+}
+.itblfrm td {
+    padding: 3px;
+}
+.itblfrm input[type=text], .itblfrm input[type=password]{
+    width:  91%;
+    padding: 5px;
+    border: solid 1px #CCC;
+    border-radius: 3px;
+    font-family: sans-serif;
+    letter-spacing: 0.3px;
+}
+.itblfrm textarea {
+    width:  99%;
+    padding: 5px;
+    border: solid 1px #CCC;
+    border-radius: 3px;
+    font-family: sans-serif;
+    /*letter-spacing: 0.3px;*/
+    font-size: 9pt;
+}
+.itblfrm select {
+    width: 99.8%;
+    padding: 5px;
+    border: solid 1px #CCC;
+    border-radius: 3px;
+    font-family: sans-serif;
+    letter-spacing: 0.3px;
+}
+.itblfrm input[type=submit], .itblfrm input[type=button] {
+    padding: 5px 10px;
+    font-family: verdana;
+}

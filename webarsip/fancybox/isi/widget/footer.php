@@ -1,0 +1,3 @@
+<div style="text-align: center; font-family: arial; font-size: 8pt; font-weight: bold;">Copyright &copy; 2104 Kantor Arsip Daerah Pemerintah Kota Medan Versi .02</div>
+<div style="text-align: center; font-family: arial; font-size: 8pt; font-weight: bold;">Hak Cipta Dilindungi Undang-Undang</div>
+<div style="text-align: center; font-family: arial; font-size: 8pt; font-weight: bold;">Jl. Pinang Baris No. 114 E Medan. Telp 061 8472321</div>

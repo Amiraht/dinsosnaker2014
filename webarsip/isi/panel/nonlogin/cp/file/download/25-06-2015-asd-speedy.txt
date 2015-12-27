@@ -1,0 +1,68 @@
+http://welcome.indonesiawifi.net/wifi.id/spin/?switch_url=http://1.1.1.1/login.html&ap_mac=88:75:56:15:b5:e0&wlan=Speedy%20Instan@wifi.id&statusCode=3
+
+
+
+
+
+Speedy instant
+Username : 89302024051
+Password : 75506146029436
+
+Username : 89302024052
+Password: 15881732328643
+
+Username: 89302024059
+Password : 93613297527468
+
+Username : 89302024056
+Password : 83720141438445
+
+Username : 89302024060
+Password : 22761962376817
+
+Username : 89302024057
+Password : 10018272780846
+
+Username : 89302024058
+Password : 35172428656837
+
+Username: 89302024053
+Password : 87280686935224
+
+Username : 89302024055
+Password : 84107885309936
+
+Username : 89302024054
+
+Password : 92399352005445
+username : 89302477648
+password : 97291477694635
+
+username : 89302477623
+password : 78279446463817
+
+username : 89302477624
+password : 53168786956656
+
+Username : 89302024051
+Password : 75506146029436 
+
+Username : 89302024052
+Password: 15881732328643
+
+Username: 89302024053
+Password : 87280686935224
+
+Username : 89302024054
+Password : 92399352005445
+
+Username: 89302024059
+Password : 93613297527468
+
+Username : 89302024057
+Password : 10018272780846 
+
+Username : 89302024060 
+Password  : 22761962376817
+
+ http://1.1.1.1/logout.html 

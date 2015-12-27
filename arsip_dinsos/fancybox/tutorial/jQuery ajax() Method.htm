@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html style="height: 100%;" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>jQuery ajax() Method</title>
+<style>a.menu_ajax_ajax{font-weight:bold;}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="Keywords" content="HTML,CSS,XML,JavaScript,DOM,jQuery,ASP.NET,PHP,SQL,colors,tutorial,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,demos,tips,color table,w3c,cascading style sheets,active server pages,Web building,Webmaster">
+<meta name="Description" content="Free HTML CSS JavaScript DOM jQuery XML AJAX RSS ASP .NET PHP SQL tutorials, references, examples for web building.">
+<link rel="icon" href="http://www.w3schools.com/favicon.ico" type="image/x-icon">
+<script src="jQuery%20ajax%28%29%20Method_files/cse.js" async="" type="text/javascript"></script><script src="jQuery%20ajax%28%29%20Method_files/gpt.js" type="text/javascript" async=""></script><script src="jQuery%20ajax%28%29%20Method_files/dc.js" async="" type="text/javascript"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3855518-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+<!--
+function searchfield_focus(obj)
+{
+obj.style.color=""
+obj.style.fontStyle=""
+if (obj.value=="Search w3schools.com")
+	{obj.value=""}
+}
+var addr=document.location.href;
+function displayError()
+{
+document.getElementById("err_url").value=addr;
+document.getElementById("err_form").style.display="block";
+document.getElementById("err_desc").focus();
+hideSent();
+}
+function hideError()
+{
+document.getElementById("err_form").style.display="none";
+}
+function hideSent()
+{
+document.getElementById("err_sent").style.display="none";
+}
+function sendErr()
+{
+var xmlhttp;
+var err_url=document.getElementById("err_url").value;
+var err_email=document.getElementById("err_email").value;
+var err_desc=document.getElementById("err_desc").value;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("POST","/err_sup.asp",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xmlhttp.send("err_url=" + err_url + "&err_email=" + err_email + "&err_desc=" + escape(err_desc));
+document.getElementById("err_desc").value="";
+hideError();
+document.getElementById("err_sent").style.display="block";
+}
+//-->
+</script>
+<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+googletag.defineSlot('/16833175/BottomMediumRectangle', [300, 250], 'div-gpt-ad-1383210480969-0').addService(googletag.pubads());
+googletag.defineSlot('/16833175/LargePS', [[723, 280], [723, 400]], 'div-gpt-ad-1383210480969-1').addService(googletag.pubads());
+googletag.defineSlot('/16833175/MainLeaderboard', [728, 90], 'div-gpt-ad-1383210480969-2').addService(googletag.pubads());
+googletag.defineSlot('/16833175/SmallPS', [723, 170], 'div-gpt-ad-1383210480969-3').addService(googletag.pubads());
+googletag.defineSlot('/16833175/WideSkyScraper', [160, 600], 'div-gpt-ad-1383210480969-4').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","jquery");
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script><script src="jQuery%20ajax%28%29%20Method_files/pubads_impl_39.js" type="text/javascript" async=""></script>
+<script>
+  (function() {
+    var cx = '012971019331610648934:m2tou3_miwy';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<link rel="stylesheet" type="text/css" href="jQuery%20ajax%28%29%20Method_files/stdtheme.css">
+<link href="jQuery%20ajax%28%29%20Method_files/translateelement.css" charset="UTF-8" rel="stylesheet" type="text/css"><script src="jQuery%20ajax%28%29%20Method_files/main.js" charset="UTF-8" type="text/javascript"></script><script type="text/javascript" src="jQuery%20ajax%28%29%20Method_files/jsapi"></script><link rel="stylesheet" href="jQuery%20ajax%28%29%20Method_files/defaulten.css" type="text/css"><link rel="stylesheet" href="jQuery%20ajax%28%29%20Method_files/default.css" type="text/css"><script src="jQuery%20ajax%28%29%20Method_files/defaulten.js" type="text/javascript"></script><script src="jQuery%20ajax%28%29%20Method_files/search.js" type="text/javascript"></script><style type="text/css">
+.gsc-control-cse {
+font-family: Arial, sans-serif;
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-control-cse .gsc-table-result {
+font-family: Arial, sans-serif;
+}
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+border-color: #D9D9D9;
+}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+border-color: #2F5BB7;
+background-color: #357AE8;
+background-image: none;
+filter: none;
+}
+.gsc-tabHeader.gsc-tabhInactive {
+border-color: #CCCCCC;
+background-color: #FFFFFF;
+}
+.gsc-tabHeader.gsc-tabhActive {
+border-color: #CCCCCC;
+border-bottom-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-tabsArea {
+border-color: #CCCCCC;
+}
+.gsc-webResult.gsc-result,
+.gsc-results .gsc-imageResult {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gsc-webResult.gsc-result:hover,
+.gsc-imageResult:hover {
+border-color: #FFFFFF;
+background-color: #FFFFFF;
+}
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b {
+color: #1155CC;
+}
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+color: #1155CC;
+}
+.gs-webResult.gs-result a.gs-title:hover,
+.gs-webResult.gs-result a.gs-title:hover b,
+.gs-imageResult a.gs-title:hover,
+.gs-imageResult a.gs-title:hover b {
+color: #1155CC;
+}
+.gs-webResult.gs-result a.gs-title:active,
+.gs-webResult.gs-result a.gs-title:active b,
+.gs-imageResult a.gs-title:active,
+.gs-imageResult a.gs-title:active b {
+color: #1155CC;
+}
+.gsc-cursor-page {
+color: #1155CC;
+}
+a.gsc-trailing-more-results:link {
+color: #1155CC;
+}
+.gs-webResult .gs-snippet,
+.gs-imageResult .gs-snippet,
+.gs-fileFormatType {
+color: #333333;
+}
+.gs-webResult div.gs-visibleUrl,
+.gs-imageResult div.gs-visibleUrl {
+color: #009933;
+}
+.gs-webResult div.gs-visibleUrl-short {
+color: #009933;
+}
+.gs-webResult div.gs-visibleUrl-short {
+display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+display: block;
+}
+.gs-promotion div.gs-visibleUrl-short {
+display: none;
+}
+.gs-promotion div.gs-visibleUrl-long {
+display: block;
+}
+.gsc-cursor-box {
+border-color: #FFFFFF;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+border-color: #CCCCCC;
+background-color: #FFFFFF;
+color: #1155CC;
+}
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+border-color: #CCCCCC;
+background-color: #FFFFFF;
+color: #1155CC;
+}
+.gsc-webResult.gsc-result.gsc-promotion {
+border-color: #F6F6F6;
+background-color: #F6F6F6;
+}
+.gsc-completion-title {
+color: #1155CC;
+}
+.gsc-completion-snippet {
+color: #333333;
+}
+.gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link *,
+.gs-promotion .gs-snippet a:link {
+color: #1155CC;
+}
+.gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited *,
+.gs-promotion .gs-snippet a:visited {
+color: #1155CC;
+}
+.gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover *,
+.gs-promotion .gs-snippet a:hover {
+color: #1155CC;
+}
+.gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active *,
+.gs-promotion .gs-snippet a:active {
+color: #1155CC;
+}
+.gs-promotion .gs-snippet,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+color: #333333;
+}
+.gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl-short {
+color: #009933;
+}
+</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-moz-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:3px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><script src="jQuery%20ajax%28%29%20Method_files/element_main.js" charset="UTF-8" type="text/javascript"></script><script src="jQuery%20ajax%28%29%20Method_files/osd.js" type="text/javascript"></script></head>
+<body style="position: relative; min-height: 100%; top: 0px;">
+<div id="top"><div id="topLogo"><a href="http://www.w3schools.com/"><img src="jQuery%20ajax%28%29%20Method_files/w3logotest2.png" alt="W3Schools.com" style="border:0;" height="32" width="280"></a></div></div><div id="topnav"><div id="topnavTut" class="notranslate"><a class="topnav" target="_top" href="http://www.w3schools.com/default.asp">HOME </a><a class="topnav" target="_top" href="http://www.w3schools.com/html/default.asp">HTML </a><a class="topnav" target="_top" href="http://www.w3schools.com/css/default.asp">CSS </a><a class="topnav" target="_top" href="http://www.w3schools.com/js/default.asp">JAVASCRIPT </a><a class="topnav" target="_top" href="http://www.w3schools.com/sql/default.asp">SQL </a><a class="topnav" target="_top" href="http://www.w3schools.com/php/default.asp">PHP </a><a class="topnav" target="_top" href="http://www.w3schools.com/jquery/default.asp">JQUERY </a><a class="topnav" target="_top" href="http://www.w3schools.com/xml/default.asp">XML </a><a class="topnav" target="_top" href="http://www.w3schools.com/aspnet/default.asp">ASP.NET </a><a class="topnav" target="_top" href="http://www.w3schools.com/sitemap/default.asp">MORE...</a><div style="float:right;word-spacing:0;"><a class="topnav" target="_top" href="http://www.w3schools.com/sitemap/sitemap_references.asp">REFERENCES</a><span style="letter-spacing:14px;"> |</span><a class="topnav" target="_top" href="http://www.w3schools.com/sitemap/sitemap_examples.asp"> EXAMPLES</a><span style="letter-spacing:14px;"> |</span><a class="topnav" target="_blank" href="http://www.w3schools.com/forum/default.asp"> FORUM</a><span style="letter-spacing:14px;"> |</span><a class="topnav" target="_top" href="http://www.w3schools.com/about/default.asp"> ABOUT</a></div></div></div><div id="belowTopnav"><div id="page"><div><div id="leftcolumn"><h2 class="left"><span class="left_h2">jQuery Tutorial</span></h2>
+<a target="_top" href="http://www.w3schools.com/jquery/default.asp" class="menu_default">jQuery HOME</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_intro.asp" class="menu_jquery_intro">jQuery Intro</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_install.asp" class="menu_jquery_install">jQuery Install</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_syntax.asp" class="menu_jquery_syntax">jQuery Syntax</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_selectors.asp" class="menu_jquery_selectors">jQuery Selectors</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_events.asp" class="menu_jquery_events">jQuery Events</a>
+<br>
+<h2 class="left"><span class="left_h2">jQuery Effects</span></h2>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_hide_show.asp" class="menu_jquery_hide_show">jQuery Hide/Show</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_fade.asp" class="menu_jquery_fade">jQuery Fade</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_slide.asp" class="menu_jquery_slide">jQuery Slide</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_animate.asp" class="menu_jquery_animate">jQuery Animate</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_stop.asp" class="menu_jquery_stop">jQuery stop()</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_callback.asp" class="menu_jquery_callback">jQuery Callback</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_chaining.asp" class="menu_jquery_chaining">jQuery Chaining</a>
+<br>
+<h2 class="left"><span class="left_h2">jQuery HTML</span></h2>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_dom_get.asp" class="menu_jquery_dom_get">jQuery Get</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_dom_set.asp" class="menu_jquery_dom_set">jQuery Set</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_dom_add.asp" class="menu_jquery_dom_add">jQuery Add</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_dom_remove.asp" class="menu_jquery_dom_remove">jQuery Remove</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_css_classes.asp" class="menu_jquery_css_classes">jQuery CSS Classes</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_css.asp" class="menu_jquery_css">jQuery css()</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_dimensions.asp" class="menu_jquery_dimensions">jQuery Dimensions</a>
+<br>
+<h2 class="left"><span class="left_h2">jQuery Traversing</span></h2>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_traversing.asp" class="menu_jquery_traversing">jQuery Traversing</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_traversing_ancestors.asp" class="menu_jquery_traversing_ancestors">jQuery Ancestors</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_traversing_descendants.asp" class="menu_jquery_traversing_descendants">jQuery Descendants</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_traversing_siblings.asp" class="menu_jquery_traversing_siblings">jQuery Siblings</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_traversing_filtering.asp" class="menu_jquery_traversing_filtering">jQuery Filtering</a>
+<br>
+<h2 class="left"><span class="left_h2">jQuery AJAX</span></h2>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_ajax_intro.asp" class="menu_jquery_ajax_intro">jQuery AJAX Intro</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_ajax_load.asp" class="menu_jquery_ajax_load">jQuery Load</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_ajax_get_post.asp" class="menu_jquery_ajax_get_post">jQuery Get/Post</a>
+<br>
+<h2 class="left"><span class="left_h2">jQuery Misc</span></h2>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_noconflict.asp" class="menu_jquery_noconflict">jQuery noConflict()</a>
+<br>
+<h2 class="left"><span class="left_h2">jQuery Examples</span></h2>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_examples.asp" class="menu_jquery_examples">jQuery Examples</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_quiz.asp" class="menu_jquery_quiz">jQuery Quiz</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_exam.asp" class="menu_jquery_exam">jQuery Certificate</a>
+<br>
+<h2 class="left"><span class="left_h2">jQuery References</span></h2>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_ref_selectors.asp" class="menu_jquery_ref_selectors">jQuery Selectors</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_ref_events.asp" class="menu_jquery_ref_events">jQuery Events</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_ref_effects.asp" class="menu_jquery_ref_effects">jQuery Effects</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_ref_html.asp" class="menu_jquery_ref_html">jQuery HTML/CSS</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_ref_traversing.asp" class="menu_jquery_ref_traversing">jQuery Traversing</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_ref_ajax.asp" class="menu_jquery_ref_ajax">jQuery AJAX</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_ref_misc.asp" class="menu_jquery_ref_misc">jQuery Misc</a>
+<a target="_top" href="http://www.w3schools.com/jquery/jquery_ref_prop.asp" class="menu_jquery_ref_prop">jQuery Properties</a></div><div id="main"><div id="mainLeaderboard"><!-- MainLeaderboard --><div id="div-gpt-ad-1383210480969-2" style="width: 728px; height: 90px; float: right;"><script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383210480969-2'); });</script><div style="border: 0pt none;" id="google_ads_iframe_/16833175/MainLeaderboard_0__container__"><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" name="google_ads_iframe_/16833175/MainLeaderboard_0" id="google_ads_iframe_/16833175/MainLeaderboard_0" frameborder="0" height="90" scrolling="no" width="728"></iframe></div><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom; visibility: hidden; display: none;" marginheight="0" marginwidth="0" name="google_ads_iframe_/16833175/MainLeaderboard_0__hidden__" id="google_ads_iframe_/16833175/MainLeaderboard_0__hidden__" frameborder="0" height="0" scrolling="no" width="0"></iframe></div></div>
+<h1>jQuery <span class="color_h1">ajax()</span> Method</h1>
+<p><a href="http://www.w3schools.com/jquery/jquery_ref_ajax.asp"><img class="navup" src="jQuery%20ajax%28%29%20Method_files/up.gif" alt="jQuery AJAX Methods"> jQuery AJAX Methods</a></p>
+
+<div class="example">
+<h2 class="example">Example</h2>
+<p>Change the text of a &lt;div&gt; element using an AJAX request:</p>
+<div class="example_code notranslate">
+    $("button").click(function(){<br>
+&nbsp; $.ajax({url:"demo_test.txt",success:function(result){<br>
+&nbsp;&nbsp;&nbsp; $("#div1").html(result);<br>
+&nbsp; }});<br>
+	});
+</div>
+<br>
+<a class="tryitbtn" href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_ajax" target="_blank">Try it yourself »</a>
+</div>
+<hr>
+
+<h2>Definition and Usage</h2>
+<p>The ajax() method is used to perform an AJAX (asynchronous HTTP) request.</p>
+<p>All jQuery AJAX methods use the ajax() method. This method is 
+mostly used for requests where the other methods cannot be used.</p>
+<hr>
+
+<h2>Syntax</h2>
+<div class="code notranslate"><div>
+$.ajax(<i>{name:value, name:value, ... }</i>)</div></div>
+<p>The parameters specifies one or more name/value pairs for the AJAX request.</p>
+<p>Possible names/values in the table below:</p>
+<table class="reference notranslate"> 
+  <tbody><tr>
+    <th style="width:27%">Name</th>
+    <th>Value/Description</th>
+  </tr>  
+    <tr>
+    <td>async</td>
+    <td>A Boolean value indicating whether the request should be handled 
+	asynchronous or not. Default is true</td>
+    </tr>
+	<tr>
+    <td>beforeSend(<em>xhr</em>)</td>
+    <td>A function to run before the request is sent</td>
+    </tr>
+	<tr>
+    <td>cache</td>
+    <td>A Boolean value indicating whether the browser should cache the 
+	requested pages. Default is true</td>
+    </tr>
+	<tr>
+    <td>complete(<em>xhr,status</em>)</td>
+    <td>A function to run when the request is finished (after success and error 
+	functions)</td>
+    </tr>
+	<tr>
+    <td>contentType</td>
+    <td>The content type used when sending data to the server. Default is: "application/x-www-form-urlencoded"</td>
+    </tr>
+	<tr>
+    <td>context</td>
+    <td>Specifies the "this" value for all AJAX related callback 
+	functions</td>
+    </tr>
+	<tr>
+    <td>data</td>
+    <td>Specifies data to be sent to the server</td>
+    </tr>
+	<tr>
+    <td>dataFilter(<em>data</em>,<em>type</em>)</td>
+    <td>A function used to handle the raw response data of the XMLHttpRequest</td>
+    </tr>
+	<tr>
+    <td>dataType</td>
+    <td>The data type expected of the server response.</td>
+    </tr>
+	<tr>
+    <td>error(<em>xhr,status,error</em>)</td>
+    <td>A function to run if the request fails.</td>
+    </tr>
+	<tr>
+    <td>global</td>
+    <td>A Boolean value specifying whether or not to trigger global AJAX event handles for the request. 
+	Default is true</td>
+    </tr>
+	<tr>
+    <td>ifModified</td>
+    <td>A Boolean value specifying whether a request is only successful if the response has changed 
+	since the last request. Default is: false.</td>
+    </tr>
+	<tr>
+    <td>jsonp</td>
+    <td>A string overriding the callback function in a jsonp request</td>
+    </tr>
+	<tr>
+    <td>jsonpCallback</td>
+    <td>Specifies a name for the callback function in a jsonp request</td>
+    </tr>
+	<tr>
+    <td>password</td>
+    <td>Specifies a password to be used in an HTTP access authentication request.</td>
+    </tr>
+	<tr>
+    <td>processData</td>
+    <td>A Boolean value specifying whether or not data sent with the request 
+	should be transformed into a query string. Default is true</td>
+    </tr>
+	<tr>
+    <td>scriptCharset</td>
+    <td>Specifies the charset for the request</td>
+    </tr>
+	<tr>
+    <td>success(<em>result,status,xhr</em>)</td>
+    <td>A function to be run when the request succeeds</td>
+    </tr>
+	<tr>
+    <td>timeout</td>
+    <td>The local timeout (in milliseconds) for the request</td>
+    </tr>
+	<tr>
+    <td>traditional</td>
+    <td>A Boolean value specifying whether or not to use the traditional style 
+	of param serialization</td>
+    </tr>
+	<tr>
+    <td>type</td>
+    <td>Specifies the type of request. (GET or POST)</td>
+    </tr>
+	<tr>
+    <td>url</td>
+    <td>Specifies the URL to send the request to. Default is the current page</td>
+    </tr>
+	<tr>
+    <td>username</td>
+    <td>Specifies a username to be used in an HTTP access authentication request</td>
+    </tr>
+    <tr>
+    <td>xhr</td>
+    <td>A function used for creating the XMLHttpRequest object</td>
+    </tr>
+</tbody></table>
+<br>
+<hr>
+<div class="tryit_ex">
+<img src="jQuery%20ajax%28%29%20Method_files/tryitimg.gif" style="width:40px;height:46px" alt="Examples">
+<h2>Try it Yourself - Examples</h2>
+</div>
+<p>
+<a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_ajax_async" target="_blank">Make an synchronous AJAX request</a><br>
+How to use the async setting to specify a synchronous request</p>
+<p>
+<a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_ajax_datatype" target="_blank">Make an AJAX request with a specified data type</a><br>
+How to use the dataType setting to specify the data type for the request.</p>
+<p>
+<a href="http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_ajax_ajax_error" target="_blank">Make an AJAX request with an error</a><br>
+How to use the error setting to deal with errors in an AJAX request.</p>
+<hr>
+
+<p><a href="http://www.w3schools.com/jquery/jquery_ref_ajax.asp"><img class="navup" src="jQuery%20ajax%28%29%20Method_files/up.gif" alt="jQuery AJAX Methods"> jQuery AJAX Methods</a></p>
+				<hr>
+				<!-- SmallPS -->
+				<div id="div-gpt-ad-1383210480969-3" style="width:723px;display:none;">
+				<script type="text/javascript">
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383210480969-3'); });
+				</script>
+				<div style="border: 0pt none;" id="google_ads_iframe_/16833175/SmallPS_0__container__"><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" name="google_ads_iframe_/16833175/SmallPS_0" id="google_ads_iframe_/16833175/SmallPS_0" frameborder="0" height="170" scrolling="no" width="723"></iframe></div></div>
+				<!-- LargePS -->
+				<div id="div-gpt-ad-1383210480969-1" style="width: 723px;">
+				<script type="text/javascript">
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383210480969-1'); });
+				</script>
+				<div style="border: 0pt none;" id="google_ads_iframe_/16833175/LargePS_0__container__"><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" name="google_ads_iframe_/16833175/LargePS_0" id="google_ads_iframe_/16833175/LargePS_0" frameborder="0" height="280" scrolling="no" width="723"></iframe></div></div>
+				<!-- BottomMediumRectangle -->
+				<div id="div-gpt-ad-1383210480969-0" style="width: 300px; height: 250px; margin-left: 172px;">
+				<script type="text/javascript">
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383210480969-0'); });
+				</script>
+				<div style="border: 0pt none;" id="google_ads_iframe_/16833175/BottomMediumRectangle_0__container__"><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" name="google_ads_iframe_/16833175/BottomMediumRectangle_0" id="google_ads_iframe_/16833175/BottomMediumRectangle_0" frameborder="0" height="250" scrolling="no" width="300"></iframe></div></div>
+				<div id="err_form">
+					<h2>Your suggestion:</h2>
+					<p><label for="err_email">Your E-mail (optional):</label> <input id="err_email" name="err_email" type="email"></p>
+					<p><label for="err_url">Page address:</label> <input disabled="disabled" id="err_url" name="err_url" type="text"></p>
+					<p><label for="err_desc">Description:</label> <textarea name="err_desc" id="err_desc" cols="92" rows="20"></textarea></p>
+					<p class="submit"><input value="Submit" onclick="sendErr()" type="button"></p>
+					<div class="err_close" onclick="hideError()">Close [X]</div>
+				</div>
+				<div id="err_sent">
+					<h2>Thank You For Helping Us!</h2>
+					<p>Your message has been sent to W3Schools.</p>
+					<div class="err_close" onclick="hideSent()">Close [X]</div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+	<div id="rightcolumn">
+		<div id="searchSection">
+			<div id="searchText">Search w3schools.com:</div>
+			<div id="googleSearch">
+				<div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-en"><div dir="ltr" class="gsc-control-wrapper-cse"><form accept-charset="utf-8" class="gsc-search-box gsc-search-box-tools"><table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-input"><div id="gsc-iw-id1" class="gsc-input-box"><table class="gstl_50 " id="gs_id50" style="width: 100%; padding: 0px;" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsib_a" id="gs_tti50"><input spellcheck="false" dir="ltr" id="gsc-i-id1" style="width: 100%; padding: 0px; border: medium none; margin: 0px; height: auto; outline: medium none; background: url(&quot;http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);" title="search" name="search" class="gsc-input" size="10" autocomplete="off" type="text"></td><td class="gsib_b"><div dir="ltr" id="gs_st50" class="gsst_b"><a style="display: none;" href="javascript:void(0)" class="gsst_a"><span id="gs_cb50" class="gscb_a">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><input title="search" class="gsc-search-button gsc-search-button-v2" src="jQuery%20ajax%28%29%20Method_files/search_box_icon.png" type="image"></td><td class="gsc-clear-button"><div title="clear results" class="gsc-clear-button">&nbsp;</div></td></tr></tbody></table><table class="gsc-branding" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img class="gsc-branding-img" src="jQuery%20ajax%28%29%20Method_files/small-logo.png"></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div tabindex="0" class="gsc-results-close-btn"></div><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table class="gsc-above-wrapper-area-container" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table class="gsc-resultsHeader" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Web</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div title="show one result" class="gsc-result-selector gsc-one-result">&nbsp;</div><div title="show more results" class="gsc-result-selector gsc-more-results">&nbsp;</div><div title="show all results" class="gsc-result-selector gsc-all-results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div tabindex="0" class="gsc-modal-background-image"></div></div></div></div>
+			</div>
+		</div>
+		<div id="translateSection">
+			<div id="google_translate_element" style="word-spacing:3px;background-color:transparent;position:relative;top:-7px;"><div style="" dir="ltr" class="skiptranslate goog-te-gadget"><div class="goog-te-gadget-simple" style="white-space: nowrap;" id=":0.targetLanguage"><img style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;" class="goog-te-gadget-icon" src="jQuery%20ajax%28%29%20Method_files/cleardot.gif"><span style="vertical-align: middle;"><a href="javascript:void(0)" class="goog-te-menu-value"><span>Select Language</span><img src="jQuery%20ajax%28%29%20Method_files/cleardot.gif" height="1" width="1"><span style="border-left: 1px solid rgb(187, 187, 187);">​</span><img src="jQuery%20ajax%28%29%20Method_files/cleardot.gif" height="1" width="1"><span style="color: rgb(155, 155, 155);">▼</span></a></span></div></div></div>			
+		</div>
+		<div class="rightad">
+			<h2>WEB HOSTING</h2>
+			<a target="_blank" rel="nofollow" href="http://www.lunarpages.com/id/w3schools/goto/w3schools">Best Web Hosting</a>
+			<a target="_blank" rel="nofollow" href="http://www.heartinternet.co.uk/">UK Reseller Hosting</a>
+			<a target="_blank" rel="nofollow" href="http://www.eukhost.com/dedicated-server-hosting.php?utm_source=w3s&amp;utm_medium=cpc&amp;utm_campaign=w3school-dedicated">Dedicated Servers</a>						
+			<a target="_blank" rel="nofollow" href="http://www.webhosting.uk.com/cpanel-hosting.php?utm_source=w3school&amp;utm_medium=cpc&amp;utm_campaign=w3school-30-4-2014">cPanel Hosting</a>									
+		</div>
+		<div class="rightad">
+			<h2>WEB BUILDING</h2>
+			<a target="_blank" rel="nofollow" id="altovatext" href="http://www.altova.com/ref/?s=w3s_text2&amp;amp;q=xmlspy">XML Editor - Free Trial!</a>
+			<script>
+			if (Math.random()<0.5)
+				{
+				x=document.getElementById("altovatext");
+				x.innerHTML="XML Editor - Free Trial!";
+				x.href="http://www.altova.com/ref/?s=w3s_text2&amp;q=xmlspy";
+				}
+			</script>
+			<a target="_blank" rel="nofollow" href="http://www.wix.com/eteamhtml/900_fwb?utm_campaign=ma_w3schools.com&amp;experiment_id=ma_w3schools.comlink1_900_fwb&amp;embed_tags=camp&amp;utm_camp=hOUdCO-AmAMQm__j8AM">FREE Website BUILDER</a>
+			<a target="_blank" rel="nofollow" href="http://www.wix.com/eteamhtml/templates-us?utm_campaign=ma_w3schools.com&amp;experiment_id=ma_w3schools.comlink2_freehtml5templates_templates-us">Free HTML5 Templates</a>
+		</div>
+		<div class="rightad">
+			<h2>W3SCHOOLS EXAMS</h2>
+			<a target="_blank" href="http://www.w3schools.com/cert/default.asp">HTML, CSS, JavaScript, PHP, jQuery, XML, and ASP Certifications</a>
+		</div>
+		<div id="rightshare">
+			<h2>SHARE THIS PAGE</h2>
+			<div style="margin-top:7px;">
+				<script>
+				<!--
+				try{
+				loc=location.pathname;
+				if (loc.toUpperCase().indexOf(".ASP")<0) loc=loc+"default.asp";
+				txt='<ul id="sharelist">'
+				txt=txt+'<li id="facebook"><a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com'+loc+'" target="_blank" title="Facebook"></a></li>';
+				txt=txt+'<li id="twitter"><a href="http://twitter.com/home?status=Currently reading http://www.w3schools.com'+loc+'" target="_blank" title="Twitter"></a></li>';
+				txt=txt+'<li id="email"><a href="mailto:?&amp;subject='+document.title+'&amp;body=Take%20a%20look%20at%20this%20page%20at%20W3Schools.com:%20http://www.w3schools.com'+loc+'" target="_blank"  title="E-mail"></a></li>';
+				txt=txt+'<li id="googleplus"><a href="https://plus.google.com/share?url=http://www.w3schools.com'+loc+'" target="_blank" title="Google+"></a></li>';
+				txt=txt+'<li id="linkedin"><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.w3schools.com'+loc+'&source=w3schools.com"  target="_blank"  title="LinkedIn"></a></li>';
+				txt=txt+'<li id="reddit"><a href="http://www.reddit.com/submit?url=http://www.w3schools.com'+loc+'" target="_blank" title="Reddit"></a></li>';
+				txt=txt+'</ul>';
+				document.write(txt);
+				}
+				catch(e) {}
+				//--></script><ul id="sharelist"><li id="facebook"><a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com/jquery/ajax_ajax.asp" target="_blank" title="Facebook"></a></li><li id="twitter"><a href="http://twitter.com/home?status=Currently%20reading%20http://www.w3schools.com/jquery/ajax_ajax.asp" target="_blank" title="Twitter"></a></li><li id="email"><a href="mailto:?&amp;subject=jQuery%20ajax%28%29%20Method&amp;body=Take%20a%20look%20at%20this%20page%20at%20W3Schools.com:%20http://www.w3schools.com/jquery/ajax_ajax.asp" target="_blank" title="E-mail"></a></li><li id="googleplus"><a href="https://plus.google.com/share?url=http://www.w3schools.com/jquery/ajax_ajax.asp" target="_blank" title="Google+"></a></li><li id="linkedin"><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.w3schools.com/jquery/ajax_ajax.asp&amp;source=w3schools.com" target="_blank" title="LinkedIn"></a></li><li id="reddit"><a href="http://www.reddit.com/submit?url=http://www.w3schools.com/jquery/ajax_ajax.asp" target="_blank" title="Reddit"></a></li></ul>
+			</div>
+			<!--
+			<div style="padding-left:28px;padding-top:10px;">
+				<script>
+
+				document.write('<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fw3schoolscom&amp;send=false&amp;layout=button_count&amp;width=125&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:125px; height:21px; " allowTransparency="true"></iframe>')
+
+				</script>
+
+			</div>
+			-->	
+		</div>
+		<div style="padding-left:1px;">
+			<!-- WideSkyScraper -->
+			<div id="div-gpt-ad-1383210480969-4" class="wideSkyscraper">
+			<script type="text/javascript">
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1383210480969-4'); });
+			</script>
+			<div style="border: 0pt none;" id="google_ads_iframe_/16833175/WideSkyScraper_0__container__"><iframe src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px none; vertical-align: bottom;" marginheight="0" marginwidth="0" name="google_ads_iframe_/16833175/WideSkyScraper_0" id="google_ads_iframe_/16833175/WideSkyScraper_0" frameborder="0" height="600" scrolling="no" width="160"></iframe></div></div>
+		</div>
+		<div class="rightad" style="margin-top:8px">
+			<h2>WEB RESOURCES</h2>
+			<a target="_top" href="http://www.w3schools.com/browsers/default.asp">Web Statistics</a>
+			<a target="_top" href="http://www.w3schools.com/website/web_validate.asp">Web Validation</a>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+</div>
+<div class="footer">
+	<br>
+	<table id="bottomlinks"><tbody><tr>
+	<td style="vertical-align:top;">
+	<h3>Top 10 Tutorials</h3>
+	<a href="http://www.w3schools.com/html/default.asp"><span class="bottomlinksraquo">»</span> HTML Tutorial</a><br>
+	<a href="http://www.w3schools.com/html/html5_intro.asp"><span class="bottomlinksraquo">»</span> HTML5 Tutorial</a><br>
+	<a href="http://www.w3schools.com/css/default.asp"><span class="bottomlinksraquo">»</span> CSS Tutorial</a><br>
+	<a href="http://www.w3schools.com/css/css3_intro.asp"><span class="bottomlinksraquo">»</span> CSS3 Tutorial</a><br>
+	<a href="http://www.w3schools.com/js/default.asp"><span class="bottomlinksraquo">»</span> JavaScript Tutorial</a><br>
+	<a href="http://www.w3schools.com/jquery/default.asp"><span class="bottomlinksraquo">»</span> jQuery Tutorial</a><br>
+	<a href="http://www.w3schools.com/sql/default.asp"><span class="bottomlinksraquo">»</span> SQL Tutorial</a><br>
+	<a href="http://www.w3schools.com/php/default.asp"><span class="bottomlinksraquo">»</span> PHP Tutorial</a><br>
+	<a href="http://www.w3schools.com/aspnet/default.asp"><span class="bottomlinksraquo">»</span> ASP.NET Tutorial</a><br>
+	<a href="http://www.w3schools.com/xml/default.asp"><span class="bottomlinksraquo">»</span> XML Tutorial</a><br>
+	</td>
+	<td style="vertical-align:top;">
+	<h3>Top 10 References</h3>
+	<a href="http://www.w3schools.com/tags/default.asp"><span class="bottomlinksraquo">»</span> HTML/HTML5 Reference</a><br>
+	<a href="http://www.w3schools.com/cssref/default.asp"><span class="bottomlinksraquo">»</span> CSS 1,2,3 Reference</a><br>
+	<a href="http://www.w3schools.com/cssref/css3_browsersupport.asp"><span class="bottomlinksraquo">»</span> CSS 3 Browser Support</a><br>
+	<a href="http://www.w3schools.com/jsref/default.asp"><span class="bottomlinksraquo">»</span> JavaScript</a><br>
+	<a href="http://www.w3schools.com/jsref/default.asp"><span class="bottomlinksraquo">»</span> HTML DOM</a><br>
+	<a href="http://www.w3schools.com/dom/dom_nodetype.asp"><span class="bottomlinksraquo">»</span> XML DOM</a><br>
+	<a href="http://www.w3schools.com/php/php_ref_array.asp"><span class="bottomlinksraquo">»</span> PHP Reference</a><br>
+	<a href="http://www.w3schools.com/jquery/jquery_ref_selectors.asp"><span class="bottomlinksraquo">»</span> jQuery Reference</a><br>
+	<a href="http://www.w3schools.com/aspnet/webpages_ref_classes.asp"><span class="bottomlinksraquo">»</span> ASP.NET Reference</a><br>
+	<a href="http://www.w3schools.com/tags/ref_colornames.asp"><span class="bottomlinksraquo">»</span> HTML Colors</a><br>
+	</td>
+	<td style="vertical-align:top;">
+	<h3>Top 10 Examples</h3>
+	<a href="http://www.w3schools.com/html/html_examples.asp"><span class="bottomlinksraquo">»</span> HTML Examples</a><br>
+	<a href="http://www.w3schools.com/css/css_examples.asp"><span class="bottomlinksraquo">»</span> CSS Examples</a><br>
+	<a href="http://www.w3schools.com/js/js_examples.asp"><span class="bottomlinksraquo">»</span> JavaScript Examples</a><br>
+	<a href="http://www.w3schools.com/js/js_dom_examples.asp"><span class="bottomlinksraquo">»</span> HTML DOM Examples</a><br>
+	<a href="http://www.w3schools.com/php/php_examples.asp"><span class="bottomlinksraquo">»</span> PHP Examples</a><br>
+	<a href="http://www.w3schools.com/jquery/jquery_examples.asp"><span class="bottomlinksraquo">»</span> jQuery Examples</a><br>
+	<a href="http://www.w3schools.com/xml/xml_examples.asp"><span class="bottomlinksraquo">»</span> XML Examples</a><br>
+	<a href="http://www.w3schools.com/dom/dom_examples.asp"><span class="bottomlinksraquo">»</span> XML DOM Examples</a><br>
+	<a href="http://www.w3schools.com/asp/asp_examples.asp"><span class="bottomlinksraquo">»</span> ASP Examples</a><br>
+	<a href="http://www.w3schools.com/svg/svg_examples.asp"><span class="bottomlinksraquo">»</span> SVG Examples</a>
+	</td>
+	<td style="vertical-align:top;">
+	<h3>Web Certificates</h3>
+	<a href="http://www.w3schools.com/cert/default.asp"><span class="bottomlinksraquo">»</span> HTML Certificate</a><br>
+	<a href="http://www.w3schools.com/cert/default.asp"><span class="bottomlinksraquo">»</span> HTML5 Certificate</a><br>
+	<a href="http://www.w3schools.com/cert/default.asp"><span class="bottomlinksraquo">»</span> CSS Certificate</a><br>
+	<a href="http://www.w3schools.com/cert/default.asp"><span class="bottomlinksraquo">»</span> JavaScript Certificate</a><br>
+	<a href="http://www.w3schools.com/cert/default.asp"><span class="bottomlinksraquo">»</span> jQuery Certificate</a><br>
+	<a href="http://www.w3schools.com/cert/default.asp"><span class="bottomlinksraquo">»</span> XML Certificate</a><br>
+	<a href="http://www.w3schools.com/cert/default.asp"><span class="bottomlinksraquo">»</span> ASP Certificate</a><br>
+	<a href="http://www.w3schools.com/cert/default.asp"><span class="bottomlinksraquo">»</span> PHP Certificate</a><br>
+	</td>
+	<td style="vertical-align:top;">
+	<h3>Color Picker</h3>
+	<a href="http://www.w3schools.com/tags/ref_colorpicker.asp">
+	<img src="jQuery%20ajax%28%29%20Method_files/colorpicker.gif" alt="colorpicker" style="width:80px;height:68px;"></a>
+	</td>
+	</tr></tbody></table>
+</div>
+<hr style="height:5px;">
+<div class="footer">
+	<div id="footerImg"><a href="http://www.w3schools.com/">
+		<img style="width:150px;height:28px;border:0" src="jQuery%20ajax%28%29%20Method_files/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
+	</div>
+	<div id="footerAbout">
+		<a href="" onclick="displayError();return false" style="word-spacing:normal;">REPORT ERROR</a> |
+		<a href="http://www.w3schools.com/default.asp" target="_top">HOME</a> |
+		<a href="#top" target="_top">TOP</a> |
+		<a href="" target="_blank" onclick="printPage();return false">PRINT</a> |
+		<a href="http://www.w3schools.com/forum/default.asp" target="_blank">FORUM</a> |
+		<a href="http://www.w3schools.com/about/default.asp" target="_top">ABOUT</a> |
+		<a href="http://www.w3schools.com/about/about_advert.asp" target="_top" style="word-spacing:normal;">ADVERTISE WITH US</a>
+	</div>
+	<div id="footerText">
+		W3Schools is optimized for learning, testing, and training. Examples 
+might be simplified to improve reading and basic understanding.
+		Tutorials, references, and examples are constantly reviewed to avoid 
+errors, but we cannot warrant full correctness of all content.
+		While using this site, you agree to have read and accepted our <a href="http://www.w3schools.com/about/about_copyright.asp">terms of use</a>, <a href="http://www.w3schools.com/about/about_privacy.asp">cookie and privacy policy</a>.
+		<a href="http://www.w3schools.com/about/about_copyright.asp">Copyright 1999-2014</a> by Refsnes Data. All Rights Reserved.<br><br>
+	</div>
+</div>
+
+<script>
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement({
+		pageLanguage: 'en',
+		autoDisplay: false,    
+		gaTrack: true,
+		layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+	}, 'google_translate_element');
+}
+
+function printPage()
+{
+content=document.getElementById("main").innerHTML;
+head=document.getElementsByTagName("head")[0].innerHTML;
+var myWindow=window.open('','','');
+myWindow.document.write("<html><head>"+head+"<style>#div-gpt-ad-1379506098645-3,#div-gpt-ad-1379506098645-1,#div-gpt-ad-1379506098645-0{display:none}body{background-color:white}</style></head><body>"+content+"<p><a href='/about/about_copyright.asp'>Copyright 1999-2013</a> by Refsnes Data. All Rights Reserved.</p></body></html>");
+myWindow.document.close();
+myWindow.print();
+}
+</script>
+<script src="jQuery%20ajax%28%29%20Method_files/element.js"></script>
+
+
+
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="jQuery%20ajax%28%29%20Method_files/translate-32.png" height="20" width="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div style="display: none;" class="status-message"></div></div><table class="gstl_50 gssb_c" style="width: 220px; display: none; top: 136px; left: 1109px; position: absolute;" cellpadding="0" cellspacing="0"><tbody><tr><td class="gssb_f"></td><td style="width: 100%;" class="gssb_e"></td></tr></tbody></table><div style="position: absolute; top: -1000px; height: 1px; width: 1px;"><object id="fI0hvejne1w" name="fI0hvejne1w" type="application/x-shockwave-flash" data="jQuery%20ajax()%20Method_files/hrs.swf" height="500" width="400"><param name="allowScriptAccess" value="always"></object></div><iframe style="visibility: visible; -moz-box-sizing: content-box; width: 731px; height: 274px; display: none;" class="goog-te-menu-frame skiptranslate" frameborder="0"></iframe><iframe style="display: none; width: 0px; height: 0px;" name="google_osd_static_frame" id="google_osd_static_frame_8258881602525"></iframe></body></html>

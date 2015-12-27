@@ -1,0 +1,419 @@
+/* TAG */
+input[type=text], input[type=password], textarea, input[type=file] {
+    width: 100%;
+}
+input[type=text].ufilter {
+    width: 30%;
+}
+select {
+    width: 100.7%;
+}
+.input_inside_table{
+    width: 50%;
+    background-color: black;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    padding: 2px;
+    font-family: candara;
+    font-size: 12pt;
+}
+input[disabled=disabled] {
+    color: black;
+    border: solid 0px #CCC;
+    background-color: white;
+}
+input[type=text], input[type=password], input[type=file], textarea, select {
+    border: solid 1px #BBBBBB;
+    padding: 3px 3px;
+    font-family: candara;
+    font-size: 12pt;
+    box-shadow: 1px 1px 1px #DDDDDD;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #eeeeff;
+}
+
+/* CLASS */
+.err_msg {
+    color: red;
+    font-weight: bold;
+}
+.kelang {
+    height: 10px;
+}
+.detail {
+    font-weight: bold;
+}
+.panelcontainer {
+    border: solid 1px #CCC;
+    padding: 0px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.panelcontainer .listingtable {
+    border-collapse: collapse;
+}
+.panelcontainer .listingtable tr {
+    transition: background 0.3s;
+}
+.panelcontainer .listingtable tr:hover {
+    background-color: #eeeedd;
+}
+.panelcontainer .listingtable td {
+    /*border: solid 1px white;*/
+    border-bottom: solid 1px #DDDDDD;
+    border-top: solid 1px #DDDDDD;
+    border-left: solid 1px #DDDDDD;
+    padding: 2px;
+    /*font-style: italic;*/
+    font-family: "Microsoft Sans Serif";
+    font-size: 9pt;
+    text-transform: capitalize;
+}
+
+.panelcontainer .listingtablebackup {
+    border-collapse: collapse;
+}
+.panelcontainer .listingtablebackup tr {
+    transition: background 0.3s;
+}
+.panelcontainer .listingtablebackup tr:hover {
+    background-color: #eeeedd;
+}
+.panelcontainer .listingtablebackup td {
+    /*border: solid 1px white;*/
+    border-bottom: solid 1px #DDDDDD;
+    border-top: solid 1px #DDDDDD;
+    border-left: solid 1px #DDDDDD;
+    border-right: solid 1px #DDDDDD;
+    padding: 2px;
+    /*font-style: italic;*/
+    font-family: "Microsoft Sans Serif";
+    font-size: 9pt;
+    text-transform: capitalize;
+}
+
+.panelcontainer .listingcontent {
+    border: solid 1px #aabbaa;
+    margin-bottom: 20px;
+}
+.panelcontainer h3{
+    border: solid 0px black;
+    margin: 0px;
+    font-family: calibri;
+    font-size: 12pt;
+    padding: 10px;
+    background-color: green;
+	color: white;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+.panelcontainer .bodypanel {
+    padding: 20px;
+}
+.panelcontainer .info {
+    font-family: sans-serif;
+    font-size: 9pt;
+}
+/*.panelcontainer tr:nth-child(odd) {
+    background-color: #F3FFFF;
+}
+.panelcontainer tr:nth-child(even) {
+    background-color: #F3FFF3;
+}*/
+.panelcontainer table {
+    border-collapse: collapse;
+}
+.panelcontainer td {
+    font-family: sans-serif;
+    font-size: 9pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+}
+
+.bodyfilter label {
+    
+}
+
+.panelform td {
+    border-top: solid 1px #CCC;
+}
+
+.panelcontainer label {
+    padding: 3px 3px;
+    font-family: candara;
+    font-size: 12pt;
+}
+
+.menubar {
+    list-style: none;
+}
+.menubar a {
+    border: solid 0px black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-family: arial;
+    font-size: 9pt;
+    color: #111111;
+    font-weight: bold;
+    /*text-shadow: 0px 0px 2px #000000;*/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    transition: background 0.3s;
+    text-transform: uppercase;
+}
+.menubar a:hover {
+    border: solid 1px #BBC8FF;
+    background-color: #ddddee;
+    color: #ffffff;
+    text-shadow: 0px 0px 2px #000000;
+    font-weight: bold;
+}
+.footnote {
+    font-weight: bold;
+    font-family: arial;
+    font-size: 8pt;
+    color: green;
+}
+.headertable th{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10pt;
+    background-color: #BFD2FF;
+    border: solid 1px #ddeeee;
+    text-shadow: 2px 2px 1px #FFFFFF;
+    font-weight: bold;
+    font-style: normal;
+    padding: 5px;
+    font-family: candara;
+}
+.linkimage {
+    cursor: pointer;
+    width: 25px;
+}
+.tombolkecil {
+    padding : 1px;
+    font-size: 8pt;
+    font-family: arial;
+    font-style: italic;
+}
+.judullist {
+    font-family: sans-serif;
+    font-size: 9pt;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    color: #AAAAAA;
+}
+.isilist {
+    font-family: sans-serif;
+    font-size: 9pt;
+    padding-bottom: 7px;
+    border-bottom: solid 1px #CCC;
+    text-align: justify;
+}
+.waktulist {
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 8pt;
+    margin-top: 3px;
+    font-weight: bold;
+    color: #005A8B;
+}
+.linktambahan {
+    font-family: arial;
+    font-size: 8pt;
+    margin-top: 5px;
+    margin-right: 5px;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #EEEEEE;
+    padding: 3px 7px;
+    display: block;
+    float: left;
+    width: 60px;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: solid 1px #CCC;
+    transition: background 0.3s;
+}
+.linktambahan:hover {
+    color: #ffffff;
+    background-color: #AAAAAA;
+    border: solid 1px #999999;
+}
+.linktop {
+    float: right;
+    margin-left: 5px;
+}
+.linktopnav {
+    text-decoration: none; 
+    font-family: verdana; 
+    font-size: 9pt;
+    color: #555555;
+    background-color: #EEEEEE;
+    border: solid 1px #CCCCCC;
+    display: block;
+    padding: 3px 7px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+.linktopnav:hover {
+    color: #ffffff;
+    background-color: #AAAAAA;
+    border: solid 1px #999999;
+}
+.link_auto_panel {
+    color: green;
+    text-decoration: none;
+    font-size: 10pt;
+}
+.link_auto_panel:hover {
+    font-weight: bold;
+    /*font-size: 11pt;*/
+}
+.input_widget {
+    float: right;
+    margin-left: 3px;
+    border-left: outset 1px green;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.lampu {
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.belumdibaca {
+    background-color: #EEEE21;
+    border:  solid 1px #CDCD1C;
+}
+.telahdibaca {
+    background-color: #CDBABA;
+    border: solid 1px #5A8B00;
+}
+
+.lampu_1 {
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: yellow;
+    border:  solid 1px #CDCD1C;
+}
+
+.lampu_2 {
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: red;
+    border: solid 1px #5A8B00;
+}
+
+.lampu_3 {
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: green;
+    border: solid 1px #5A8B00;
+}
+
+.err_msg {
+    color: red;
+    font-size: 12pt;
+    font-style: italic;
+}
+.ikm {
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    font-size: 8pt;
+    text-transform: uppercase;
+}
+
+.label_caption {
+    border: solid 1px #CCC;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 11pt;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.kelang_border {
+    border-bottom: inset 1px #CCC;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.judul_berita {
+    font-family: arial;
+    font-size: 15px;
+    color: #336600;
+    padding: 2px 0px;
+}
+.tgl_berita {
+    font-family: arial;
+    font-size: 11px;
+    color: #CC9966;
+    padding: 1px 0px;
+    /*background-color: #F9FFFF;*/
+}
+.intro_berita {
+    font-family: sans-serif;
+    font-size: 10pt;
+    padding: 5px 0px;
+    text-align: justify;
+}
+.selengkapnya_berita a {
+    text-decoration: none;
+    font-family: arial;
+    font-size: 10pt;
+    color: #FF4E23;
+}
+.selengkapnya_berita a:hover {
+    text-decoration: underline;
+}
+/* ID */
+#badan {padding: 0; margin: 0;}
+#sidemenu {
+    position: absolute;
+    border: solid 1px black;
+}
+#header {
+    border: solid 0px black;
+    margin: 0px;
+}
+#topmenu {
+    border: solid 0px black;
+    text-align: right;
+    padding: 3px 10px;
+    background-color: #ddddee;
+}
+
+#body {
+    border: solid 0px black;
+    padding: 10px;
+    background-color: #EEEEFF;
+}
+#footer {
+    border: solid 0px black;
+}

@@ -1,0 +1,4 @@
+Catatan simpeg dinsos (tgl : 28-11-2015)
+
+- username : admin_skpd_dinsos, passsword : 1234
+- pen_skpd : pen_skpd, password : 1234

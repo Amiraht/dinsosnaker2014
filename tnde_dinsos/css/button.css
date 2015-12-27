@@ -1,0 +1,23 @@
+input[type='button'],input[type='submit'],input[type='reset']
+{
+	background:#2F910E;
+	color:white;
+	padding: 2px;
+	font-family:tahoma;
+	border:1px solid black;
+	cursor:pointer;
+	
+}
+
+input[type='button']:hover,
+input[type='submit']:hover,
+input[type='reset']:hover
+{
+	background:#53A93F;
+	color:white;
+	padding: 2px;
+	font-family:tahoma;
+	border:1px solid white;
+	cursor:pointer;
+	
+}

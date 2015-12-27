@@ -1,0 +1,275 @@
+/* TAG */
+body{padding: 0px; margin: 0px;}
+input[type=text], input[type=password], textarea, input[type=file] {
+    width: 98.5%;
+}
+input[type=text].ufilter {
+    width: 30%;
+}
+select {
+    width: 99.3%;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    padding: 2px;
+}
+input[disabled=disabled] {
+    color: black;
+    border: solid 0px #CCC;
+    background-color: white;
+}
+input[type=text], input[type=password], input[type=file], textarea, select {
+    border: solid 1px #BBBBBB;
+    padding: 3px;
+    font-family: sans-serif;
+    font-size: 9pt;
+    box-shadow: 1px 1px 1px #DDDDDD;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #eeeeff;
+}
+
+/* CLASS */
+.kelang {
+    height: 10px;
+}
+.detail {
+    font-weight: bold;
+}
+.panelcontainer {
+    border: solid 1px #CCC;
+    padding: 0px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.panelcontainer .listingtable {
+    border-collapse: collapse;
+}
+.panelcontainer .listingtable tr {
+    transition: background 0.3s;
+}
+.panelcontainer .listingtable tr:hover {
+    background-color: #eeeedd;
+}
+.panelcontainer .listingtable td {
+    /*border: solid 1px white;*/
+    border-bottom: solid 1px #DDDDDD;
+    border-top: solid 1px #DDDDDD;
+    border-left: solid 1px #DDDDDD;
+    padding: 2px;
+    font-style: italic;
+    font-family: verdana;
+    font-size: 8pt;
+    text-transform: capitalize;
+}
+.panelcontainer .listingcontent {
+    border: solid 1px #aabbaa;
+    margin-bottom: 20px;
+}
+.panelcontainer h3{
+    border: solid 0px black;
+    margin: 0px;
+    font-family: calibri;
+    font-size: 12pt;
+    padding: 10px;
+    background-color: #CCCFFF;
+    text-shadow: 2px 2px 1px #FFFFFF;
+}
+.panelcontainer .bodypanel {
+    padding: 20px;
+}
+.panelcontainer .info {
+    font-family: sans-serif;
+    font-size: 9pt;
+}
+/*.panelcontainer tr:nth-child(odd) {
+    background-color: #F3FFFF;
+}
+.panelcontainer tr:nth-child(even) {
+    background-color: #F3FFF3;
+}*/
+.panelcontainer table {
+    border-collapse: collapse;
+}
+.panelcontainer td {
+    font-family: sans-serif;
+    font-size: 9pt;
+    padding: 5px 7px;
+    border-bottom: solid 1px #DDDDDD;
+    border-top: solid 1px #DDDDDD;
+}
+.menubar {
+    list-style: none;
+}
+.menubar a {
+    border: solid 0px black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-family: arial;
+    font-size: 9pt;
+    color: #111111;
+    font-weight: bold;
+    /*text-shadow: 0px 0px 2px #000000;*/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    transition: background 0.3s;
+    text-transform: uppercase;
+}
+.menubar a:hover {
+    border: solid 1px #BBC8FF;
+    background-color: #ddddee;
+    color: #ffffff;
+    text-shadow: 0px 0px 2px #000000;
+    font-weight: bold;
+}
+.footnote {
+    font-weight: bold;
+    font-family: arial;
+    font-size: 8pt;
+    color: green;
+}
+.headertable th{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10pt;
+    background-color: #BFD2FF;
+    border: solid 1px #ddeeee;
+    text-shadow: 2px 2px 1px #FFFFFF;
+    font-weight: bold;
+    font-style: normal;
+    padding: 5px;
+    font-family: calibri;
+}
+.linkimage {
+    cursor: pointer;
+    width: 25px;
+}
+.tombolkecil {
+    padding : 1px;
+    font-size: 8pt;
+    font-family: arial;
+    font-style: italic;
+}
+.judullist {
+    font-family: sans-serif;
+    font-size: 9pt;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    color: #AAAAAA;
+}
+.isilist {
+    font-family: sans-serif;
+    font-size: 9pt;
+    padding-bottom: 7px;
+    border-bottom: solid 1px #CCC;
+    text-align: justify;
+}
+.waktulist {
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 8pt;
+    margin-top: 3px;
+    font-weight: bold;
+    color: #005A8B;
+}
+.linktambahan {
+    font-family: arial;
+    font-size: 8pt;
+    margin-top: 5px;
+    margin-right: 5px;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #EEEEEE;
+    padding: 3px 7px;
+    display: block;
+    float: left;
+    width: 60px;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: solid 1px #CCC;
+    transition: background 0.3s;
+}
+.linktambahan:hover {
+    color: #ffffff;
+    background-color: #AAAAAA;
+    border: solid 1px #999999;
+}
+.linktop {
+    float: right;
+    margin-left: 5px;
+}
+.linktopnav {
+    text-decoration: none; 
+    font-family: verdana; 
+    font-size: 9pt;
+    color: #555555;
+    background-color: #EEEEEE;
+    border: solid 1px #CCCCCC;
+    display: block;
+    padding: 3px 7px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+.linktopnav:hover {
+    color: #ffffff;
+    background-color: #AAAAAA;
+    border: solid 1px #999999;
+}
+.lampu {
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.belumdibaca {
+    background-color: #EEEE21;
+    border:  solid 1px #CDCD1C;
+}
+.telahdibaca {
+    background-color: #CDBABA;
+    border: solid 1px #5A8B00;
+}
+.err_msg {
+    color: red;
+    font-size: 12pt;
+    font-style: italic;
+}
+.ikm {
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    font-size: 8pt;
+    text-transform: uppercase;
+}
+/* ID */
+
+#header {
+    border: solid 0px black;
+}
+#topmenu {
+    border: solid 0px black;
+    text-align: right;
+    padding: 3px 10px;
+    background-color: #ddddee;
+}
+#body {
+    border: solid 0px black;
+    padding: 10px;
+    background-color: #EEEEFF;
+}
+#footer {
+    border: solid 0px black;
+}

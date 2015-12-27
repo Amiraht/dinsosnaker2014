@@ -1,0 +1,74 @@
+applet, object, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, 
+font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, label, legend, 
+caption 
+{margin: 0;padding: 0;;outline: 0;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+ /* remember to define focus styles! */ :focus {outline: 0;} /* remember to highlight inserts somehow! */
+ ins {text-decoration: none;}del {text-decoration: line-through;} /* tables still need 'cellspacing="0"' in the markup */
+#menu
+{
+	margin-top:10px;
+	margin-bottom:0px;
+	height: 40px;
+	float:left;
+	color:black;
+	padding-top:10px;
+	width:100%;
+}
+#menu table,tr,td,nav,tbody
+{
+	padding:0;
+	margin:0px;
+}
+a {
+	text-decoration: none;
+}
+
+
+#menu ul {
+	text-align: center;
+	display:inline;
+	
+}
+
+#menu ul li {
+	font-family:tahoma;
+	font-size: 12px;
+	cursor: pointer;
+	-webkit-transition: padding .05s linear;
+	-moz-transition: padding .05s linear;
+	-ms-transition: padding .05s linear;
+	-o-transition: padding .05s linear;
+	transition: padding .05s linear;
+	height:25px;
+	width:100px;
+	display:inline;
+	text-align:center;
+	margin:0;
+	padding-top:13px;
+	padding-bottom:15px;
+	padding-left:10px;
+	padding-right:10px;
+	position:relative;
+
+	
+}
+
+#menu ul li:hover { color: #F26F0F; }
+#menu ul li a:active { color: #FFFFFF; }
+ul li:hover .dropdownContain { top: 65px; }
+ul li:hover .underline { border-bottom-color: #777; }
+ul li:hover .dropOut { opacity: 1; margin-top: 8px; }
+#menu ul li a:hover { color: #F26F0F;}
+
+
+
+#menu ul li a {
+	color: #000;
+	-webkit-transition: all .1s ease-out;
+	-moz-transition: all .1s ease-out;
+	-ms-transition: all .1s ease-out;
+	-o-transition: all .1s ease-out;
+	transition: all .1s ease-out;
+}

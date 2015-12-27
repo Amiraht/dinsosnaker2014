@@ -1,0 +1,19 @@
+@charset "utf-8";
+.tbliisi {
+	font-family: "tahoma";
+	font-size: 12px;
+	background-color: #005262;
+	text-align: left;
+	padding: 2px;
+	clear: both;
+	height: auto;
+	width: auto;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: 1;
+	border-right-style: 1;
+	border-bottom-style: 1;
+	border-left-style: 1;
+}

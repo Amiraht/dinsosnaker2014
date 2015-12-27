@@ -1,5 +1,6 @@
 <?php
 include("../../../../libraries/dinsos.php");
+<<<<<<< HEAD
 include("../../../../libraries/function.php");
 
 $nama = trim(str_replace('<,>,*', '', $_POST["nama"]));
@@ -21,12 +22,22 @@ $id_pegawai_disnaker = setIdPegawai();
 $id_pegawai_simpeg = setIdPegawaiSimpegDinsos();
 
 $id_satuan_organisasi = id_skpd($skpd);
+=======
+
+$nama = trim(str_replace('<,>,*', '', $_POST["nama"]));
+$username = trim(str_replace('<,>,*', '', $_POST["username"]));
+$izin = trim(str_replace('<,>,*', '', $_POST["izin"]));
+$level = trim(str_replace('<,>,*', '', $_POST["level"]));
+$pswd = trim(str_replace('<,>,*', '', $_POST["password"]));
+$pwd=md5($pswd);
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 
 if($_GET["optss"] == 'tambah')
 {
 	if($nama == '' or $username == '' or $pwd == '' or $izin == '' or $level == '0')
 	{
 	?>
+<<<<<<< HEAD
 			<script type="text/javascript">
 				alert ('Isi Form Dengan Lengkap');
 				document.location.href='./tambah_member.php';
@@ -34,16 +45,31 @@ if($_GET["optss"] == 'tambah')
 	<?php
 	}
 	
+=======
+    <script type="text/javascript">
+		alert ('Isi Form Dengan Lengkap');
+		document.location.href='./tambah_member.php';
+	</script>
+	<?php
+	}
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 		
 	//cek username
 	$d = mysql_query("select username from user where username='$username'");
 	if(mysql_num_rows($d)>=1)
 	{
 	?>
+<<<<<<< HEAD
 			<script type="text/javascript">
 				alert ('Username sudah ada');
 				document.location.href='./tambah_member.php';
 			</script>
+=======
+    <script type="text/javascript">
+		alert ('Username sudah ada');
+		document.location.href='./tambah_member.php';
+	</script>
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 	<?php
 	}
 	
@@ -51,6 +77,7 @@ if($_GET["optss"] == 'tambah')
 	
 	if($d)
 	{
+<<<<<<< HEAD
 			// insert ke tabel pegawai simpeg
 			insertPegawai($id_pegawai_disnaker, $nip, $nama, $id_satuan_organisasi, $id_pangkat, $alamat);
 			
@@ -59,6 +86,11 @@ if($_GET["optss"] == 'tambah')
 			?>
 			<script type="text/javascript">
 				alert('Berhasil menambah data pengguna');
+=======
+			?>
+			<script type="text/javascript">
+				alert('Berhasil pengguna');
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 				parent.document.location.href='../../../../index.php?mod=cp&opt=member&opts=view';
 				//document.location.href='./tambah_berita.php';
 			</script>
@@ -92,10 +124,17 @@ else if($_GET["optss"] == 'edit')
 		if($edit)
 		{
 		?>
+<<<<<<< HEAD
 				<script type="text/javascript">
 					alert('Berhasil Mengubah Data Pengguna');
 					parent.document.location.href='../../../../index.php?mod=cp&opt=member&opts=view';
 				</script>
+=======
+           <script type="text/javascript">
+			alert('Berhasil Mengubah Pengguna');
+			parent.document.location.href='../../../../index.php?mod=cp&opt=member&opts=view';
+		</script>
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
         <?php
 		}
 		else

@@ -4,7 +4,11 @@
 	{
 		var y ='<?php echo $_GET["halaman"]; ?>';
 		var s;
+<<<<<<< HEAD
 		s='./index.php?mod=kadis&opt=lembar_kendali';
+=======
+		s='./index.php?mod=loket&opt=lembar_kendali';
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 		//s='agenda_masuk.php?opts=view';
 		if(y>1)
 			s=s+'&halaman=1';
@@ -24,7 +28,11 @@
 		var jenis ='<?php echo $_GET["jenis"]; ?>';
 
 		var s;
+<<<<<<< HEAD
 		s='./index.php?mod=kadis&opt=lembar_kendali';
+=======
+		s='./index.php?mod=loket&opt=lembar_kendali';
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 		//s='agenda_masuk.php?opts=view';
 		if(cari != '')
 			s=s+'&cari='+cari;
@@ -49,7 +57,11 @@
 	function lihat_kendali(k,uid)
 	{
 		var s;
+<<<<<<< HEAD
 		s='./index.php?mod=kadis&opt=lihat_kendali';
+=======
+		s='./index.php?mod=loket&opt=lihat_kendali';
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 		if(k != '')
 		s=s+'&link='+k;
 		if(uid != '')

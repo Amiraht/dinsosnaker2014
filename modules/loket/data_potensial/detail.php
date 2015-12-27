@@ -1,6 +1,7 @@
 <script type="text/javascript">
 	function cetak_data(id_p,sumber){
 	//var x = '<?php echo "$no_resi"; ?>';
+<<<<<<< HEAD
 		s = '../../../index.php?mod=loket&opt=cetak_potensial&sumber='+sumber+'&id_p='+id_p;
 		alert(s);
 		//window.open(s);
@@ -10,6 +11,12 @@
 	function cetak_dulu_bro(id, sumber){
 		alert("ID : " + id + " sumber : " + sumber);
 	}
+=======
+	s='../../../index.php?mod=loket&opt=cetak_potensial&sumber='+sumber+'&id_p='+id_p;
+		parent.window.open(s, '_blank');
+		//parent.document.location.href=s;
+	}
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 </script>
 
 <?php
@@ -242,8 +249,12 @@ echo "
 	    <td>&nbsp;</td>
 	    <td>&nbsp;</td>
 	    <td>&nbsp;</td>
+<<<<<<< HEAD
 	    <td><input type='button' value='CETAK DATA'  onclick="window.open('../../../index.php?mod=loket&opt=cetak_potensial&sumber=<?=$sumber;?>&id_p=<?=$id;?>');" 
 						style='margin-right:5px; float:right;'/></td>
+=======
+	    <td><input type='button' value='CETAK DATA' onCLick=<?php echo $onc;?> style='margin-right:5px; float:right;'/></td>
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 	    <!--<td><input type='button' value='CETAK DATA EXCEL' onCLick='' style='margin-right:5px;' /></td>-->
       </tr>
     </table>

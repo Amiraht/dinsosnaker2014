@@ -6,7 +6,11 @@
 	require_once('./libraries/tcpdf/tcpdf.php');
 	include('./libraries/dinsos.php');
 	
+<<<<<<< HEAD
 	$id = mysql_real_escape_string(strip_tags(trim($_GET['id_p'])));
+=======
+	$id = $_GET['id_p'];
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 	$sumber = $_GET['sumber'];
 		
 	if($sumber=='BPPT')

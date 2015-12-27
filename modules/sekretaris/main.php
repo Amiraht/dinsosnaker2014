@@ -22,7 +22,11 @@
             <span id="vertical"></span><a href="./index.php?mod=sekretaris&opt=lembar_kendali" class="menu">LEMBAR KENDALI</a><br /><br />
             <span id="vertical"></span><a href="./index.php?mod=loket&opt=laporan" class="menu">LAPORAN-LAPORAN</a><br /><br />
             <span id="vertical"></span><a href="./index.php?mod=sekretaris&opt=user" class="menu">PROFIL USER</a><br />		<br />
+<<<<<<< HEAD
             <span id="vertical"></span><a href="./index.php?mod=sekretaris&opt=utama"  class="menu">BERANDA UTAMA</a><br /><br />
+=======
+            <span id="vertical"></span><a href="./index.php?mod=auth&opt=logout"  class="menu">LOGOUT</a><br /><br />
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
         </td>
 	</tr>
 	</table>
@@ -30,6 +34,7 @@
     </td>
   </tr>
   <tr>
+<<<<<<< HEAD
     <td align="center" valign="middle">
     <div id='menu' style='border:0px solid black;'>
                     <nav>
@@ -45,6 +50,8 @@
     </td>
   </tr>
   <tr>
+=======
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
     <td><br><div id='footer'></div></td>
   </tr>
 </table>

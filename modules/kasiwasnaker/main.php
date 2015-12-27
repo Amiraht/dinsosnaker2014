@@ -30,6 +30,7 @@
 	</div>
     </td>
   </tr>
+<<<<<<< HEAD
    <tr>
      <td align="center" valign="middle">
      <div id='menu' style='border:0px solid black;'>
@@ -45,6 +46,8 @@
      </div>
      </td>
   </tr>
+=======
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
   <tr>
     <td><br><div id='footer'></div></td>
   </tr>

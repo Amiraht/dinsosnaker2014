@@ -6,7 +6,10 @@ function openDatabase(){
 	mysql_select_db("db_disnakersos");
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 function upload_random($fupload_name, $link){
   //direktori gambar
   $vdir_upload = "../foto_random/";

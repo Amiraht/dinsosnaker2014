@@ -151,12 +151,21 @@
             </tr>   
                  
          <?php
+<<<<<<< HEAD
 		 if(mysql_num_rows($qsrt) <= 0)
 		 {
 		 ?>
 			<tr id="tbl-content">
 				<td colspan="9">Data tidak Ditemukan</td>
 			</tr>
+=======
+		 if(mysql_num_rows($qsrt) == '')
+		 {
+		 ?>
+         <tr id="tbl-content">
+         <td colspan="9">Data tidak Ditemukan</td>
+         </tr>
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
          <?php
 		 }
 		 $i = $posisi + 1;

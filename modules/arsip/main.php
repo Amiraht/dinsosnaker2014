@@ -4,7 +4,11 @@
     	<div id='headerdepan' style="background:url(./image/coba/header.png) no-repeat;">
         <table border="0" style="float:right; margin-top:70px; font-size:18px; font-weight:bold;">
         	<tr>
+<<<<<<< HEAD
 		         <td style="text-align:right; padding-right:10px; height:20px;"><a style="color:#AA9F00;" href="index.php?mod=menu&do=main">BERANDA UTAMA ARSIP</a></td>
+=======
+		         <td style="text-align:right; padding-right:10px; height:20px;"><a style="color:#AA9F00; href="index.php?mod=menu&do=main">BERANDA UTAMA ARSIP</a></td>
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
             </tr>
         </table>
         </div>

@@ -28,13 +28,20 @@
         <br><br><br>
             <img src='./image/list.png'>&nbsp;<a href='index.php?mod=cp&opt=download&opts=view' class="menu">DATA FILE DOWNLOAD</a>            
          <br><br><br>
+<<<<<<< HEAD
 			<img src='./image/list.png'>&nbsp;<a href="./index.php?mod=cp&opt=pegawai" class="menu">MANAJEMEN DATA PEGAWAI</a>
          <br><br><br>
+=======
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
             <img src='./image/list.png'>&nbsp;<a href='index.php?mod=cp&opt=member&opts=view' class="menu">MANAJEMEN PENGGUNA</a>
          <br><br><br>         
             <img src='./image/list.png'>&nbsp;<a href="./index.php?mod=cp&opt=user" class="menu">PROFIL USER</a>
          <br><br><br>
+<<<<<<< HEAD
             <img src='./image/list.png'>&nbsp;<a href="./index.php?mod=cp&opt=utama"  class="menu">BERANDA UTAMA</a>          
+=======
+            <img src='./image/list.png'>&nbsp;<a href="./index.php?mod=auth&opt=logout"  class="menu">LOGOUT</a>          
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
         </td>                    
 	</tr>
 	</table>

@@ -18,7 +18,11 @@
 	$pass2 = md5($_POST["pass_new2"]);
 	$pass3 = md5($_POST["pass_old"]);
 	
+<<<<<<< HEAD
 	$cek = "select password from user where id_user='$id'";
+=======
+	$cek="select password from user where id_user='$id'";
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 	$hasil=mysql_query($cek);
 	$a = mysql_fetch_array($hasil);
 	

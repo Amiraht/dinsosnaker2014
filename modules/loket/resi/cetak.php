@@ -12,8 +12,13 @@ $alamat_per = "";
 $jenis_usaha = "";
 $alamat_ta = "";
 
+<<<<<<< HEAD
 $ab = mysql_real_escape_string(strip_tags(trim($_GET["id"])));
 $data = explode("-",$ab);
+=======
+$ab = $_GET["id"];
+$data=explode("-",$ab);
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
 $jenis_urus = $data[0];
 // BUAT QUERY PER JENIS URUS //
 if ($jenis_urus == '01')

@@ -21,13 +21,18 @@
             <span id="vertical"></span><a href="./index.php?mod=stafkasihubsaker&opt=lembar_kendali" class="menu">LEMBAR KENDALI</a><br /><br /><br />
             <span id="vertical"></span><a href="./index.php?mod=loket&opt=laporan" class="menu">LAPORAN-LAPORAN</a><br /><br /><br />
             <span id="vertical"></span><a href="./index.php?mod=stafkasihubsaker&opt=user" class="menu">PROFIL USER</a><br /><br /><br />
+<<<<<<< HEAD
             <span id="vertical"></span><a href="./index.php?mod=stafkasihubsaker&opt=utama"  class="menu">BERANDA UTAMA</a><br /><br />
+=======
+            <span id="vertical"></span><a href="./index.php?mod=auth&opt=logout"  class="menu">LOGOUT</a><br /><br />
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
         </td>
 	</tr>
 	</table>
 	</div>
     </td>
   </tr>
+<<<<<<< HEAD
     <tr>
     <td align="center" valign="middle">
     <div id='menu' style='border:0px solid black;'>
@@ -43,6 +48,8 @@
     </div>
     </td>
   </tr>
+=======
+>>>>>>> 61b16164dbc53b4bcbd8d4faadd081d2b93a07d3
   <tr>
     <td><br><div id='footer'></div></td>
   </tr>

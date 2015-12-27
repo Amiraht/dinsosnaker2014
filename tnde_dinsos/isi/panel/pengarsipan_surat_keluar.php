@@ -39,9 +39,10 @@ $(document).ready(function(){
 						
 						<form name="frm" action="php/edit_surat_keluar.php" method="POST">
 							<?php
-								$ds = mysql_fetch_array(mysql_query("SELECT * FROM myapp_maintable_suratkeluar WHERE id='$_GET[id]'"));
+								$id = mysqli_real_escape_string($con,$_GET["id"]);
+								$ds = mysql_fetch_array(mysql_query("SELECT * FROM myapp_maintable_suratkeluar WHERE id='". $id ."'"));
 							?>
-							<input type="hidden" name="id" value="<?php echo($_GET["id"]); ?>" />
+							<input type="hidden" name="id" value="<?php echo($ds["id"]); ?>" />
 							<table border="0px" cellspacing='0' cellpadding='0' width='100%'>
 								<tr>
 									<td width='20%'>Nomor Surat</td>
@@ -152,7 +153,7 @@ $(document).ready(function(){
 						<h3>LOKASI PENGARSIPAN SURAT KELUAR</h3>
 						<form name="frm" action="php/pengarsipan_surat_keluar.php" method="post">
 							
-							<input type="hidden" name="id_surat_keluar" value="<?php echo($_GET["id"]); ?>" />
+							<input type="hidden" name="id_surat_keluar" value="<?php echo($ds["id"]); ?>" />
 							<table border="0px" cellspacing='0' cellpadding='0' width='100%'>
 							<?php
 								$ds_arsip = mysql_fetch_array(mysql_query("SELECT * FROM myapp_archivetable_suratkeluar WHERE id_surat_keluar='" . $_GET["id"] . "'"));
